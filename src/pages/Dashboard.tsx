@@ -14,7 +14,7 @@ export default function Dashboard() {
               <Image
                 src="/img/rekhta.png"
                 height={160}
-                alt="Norway"
+                alt="Rekhta"
               />
             </Card.Section>
 
@@ -35,9 +35,9 @@ export default function Dashboard() {
          <Card shadow="sm" padding="lg" radius="md" withBorder>
           <Card.Section>
             <Image
-              src="/img/chughtai.jpg"
+              src="/img/chughtai.jpeg"
               height={160}
-              alt="Norway"
+              alt="chughtai"
             />
           </Card.Section>
 

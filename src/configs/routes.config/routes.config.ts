@@ -2,12 +2,9 @@ import { lazy } from 'react'
 import authRoute from './authRoute'
 import type { Routes } from '@/@types/routes'
 
-export const publicRoutes: Routes = [...authRoute]
-
-export const protectedRoutes: Routes = [
-  {
+export const publicRoutes: Routes = [{
     key: 'dashboard',
-    path: '/dashboard',
+    path: '/',
     component: lazy(() => import('@/pages/Dashboard')),
     authority: []
   },
@@ -22,5 +19,7 @@ export const protectedRoutes: Routes = [
     path: '/rekhta-download',
     component: lazy(() => import('@/pages/RekhtaDownload')),
     authority: []
-  }
-]
+  },
+  ...authRoute]
+
+export const protectedRoutes: Routes = []

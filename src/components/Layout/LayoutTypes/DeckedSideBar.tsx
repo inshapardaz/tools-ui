@@ -44,7 +44,7 @@ function DeckedSideBarContent() {
             />
           </div>
           {navigationConfig.map((link, index) => (
-            <AuthorityCheck userAuthority={userAuthority ? userAuthority : []} authority={link.authority}>
+            // <AuthorityCheck userAuthority={userAuthority ? userAuthority : []} authority={link.authority}>
               <Tooltip
                 label={link.translateKey ? t(link.translateKey) : link.title}
                 position="right"
@@ -63,7 +63,7 @@ function DeckedSideBarContent() {
                   }} stroke={1.5}/>
                 </UnstyledButton>
               </Tooltip>
-            </AuthorityCheck>
+            // </AuthorityCheck>
           ))}
         </div>
         <div className={classes.main}>
@@ -76,7 +76,7 @@ function DeckedSideBarContent() {
                 {
                   link.subMenu?.map((submenuItem, subIndex) => {
                     return (
-                      <AuthorityCheck userAuthority={userAuthority ? userAuthority : []} authority={submenuItem.authority}>
+                      // <AuthorityCheck userAuthority={userAuthority ? userAuthority : []} authority={submenuItem.authority}>
                         <Link
                           to={`${link.path}/${submenuItem.path}`}
                           className={classes.link}
@@ -85,14 +85,15 @@ function DeckedSideBarContent() {
                         >
                           {submenuItem.translateKey ? t(submenuItem.translateKey) : submenuItem.title}
                         </Link>
-                      </AuthorityCheck>)
+                      // </AuthorityCheck>
+                    )
                   })}
               </div>
             ))}
           </div>
-          <div className={classes.sideBarBottomContent}>
+          {/* <div className={classes.sideBarBottomContent}>
             <SimpleSideBarBottomContent/>
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>

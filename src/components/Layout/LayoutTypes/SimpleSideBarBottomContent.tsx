@@ -5,18 +5,19 @@ import {
   IconLogout,
 } from '@tabler/icons-react';
 
-export default function SimpleSideBarBottomContent(){
-  const {signOut} = useAuth()
+export default function SimpleSideBarBottomContent() {
+  return null;
+  // const {signOut} = useAuth()
 
-  return(
-    <>
-      <UserPopOver/>
-      <div className={classes.link} onClick={(event) => {
-        signOut()
-      }}>
-        <IconLogout className={classes.icon}/>
-        <span>Exit</span>
-      </div>
-    </>
-  )
+  // return(
+  //   <>
+  //     <UserPopOver/>
+  //     <div className={classes.link} onClick={(event) => {
+  //       signOut()
+  //     }}>
+  //       <IconLogout className={classes.icon}/>
+  //       <span>Exit</span>
+  //     </div>
+  //   </>
+  // )
 }
