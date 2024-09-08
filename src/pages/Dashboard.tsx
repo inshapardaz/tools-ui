@@ -12,7 +12,7 @@ export default function Dashboard() {
           <Card shadow="sm" padding="lg" radius="md" withBorder>
             <Card.Section>
               <Image
-                src="../../../public/img/rekhta.png"
+                src="/img/rekhta.png"
                 height={160}
                 alt="Norway"
               />
@@ -35,7 +35,7 @@ export default function Dashboard() {
          <Card shadow="sm" padding="lg" radius="md" withBorder>
           <Card.Section>
             <Image
-              src="../../../public/img/chughtai.jpg"
+              src="/img/chughtai.jpg"
               height={160}
               alt="Norway"
             />
