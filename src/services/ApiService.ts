@@ -8,7 +8,7 @@ const ApiService = {
         .then((response: AxiosResponse<TRes>) => resolve(response))
         .catch((error: AxiosError) => reject(error));
     });
-  },
+  }
 };
 
 export default ApiService;

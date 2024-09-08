@@ -12,9 +12,18 @@ const navigationConfig: NavigationTree[] = [
     subMenu: []
   },
   {
-    key: 'users',
-    path: '/users',
-    title: 'Users',
+    key: 'rekhta-download',
+    path: '/rekhta-download',
+    title: 'Rekhta Download',
+    translateKey: '',
+    icon: IconUser,
+    authority: [],
+    subMenu: []
+  },
+  {
+    key: 'chughtai-download',
+    path: '/chughtai-download',
+    title: 'Chughtai Library Download',
     translateKey: '',
     icon: IconUser,
     authority: [],

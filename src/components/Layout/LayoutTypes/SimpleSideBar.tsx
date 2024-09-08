@@ -59,7 +59,7 @@ function SideBar() {
     <nav className={classes.navbar}>
       <div className={classes.navbarMain}>
         <Group className={classes.header} justify="space-between">
-          <img className={classes.logo} alt={'Mantine Logo'} src={'/logo/logo-light-full.svg'}/>
+          <img className={classes.logo} alt={'Logo'} src={'../../../../public/logo/logo.png'}/>
         </Group>
         {links}
       </div>

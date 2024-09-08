@@ -11,10 +11,11 @@ export type AppConfig = {
 
 const appConfig: AppConfig = {
   layoutType: LayoutTypes.SimpleSideBar,
-  apiPrefix: '',
+  //apiPrefix: 'https://api.nawishta.co.uk/',
+  apiPrefix: 'http://localhost:4000/',
   authenticatedEntryPath: '/dashboard',
   unAuthenticatedEntryPath: '/sign-in',
-  enableMock: true,
+  enableMock: false,
   locale: 'en',
 }
 
