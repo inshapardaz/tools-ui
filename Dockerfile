@@ -4,12 +4,14 @@ WORKDIR /app
 
 # Install packages
 COPY package.json ./
-COPY yarn.lock ./
-RUN yarn install --silent
+
+COPY package-lock.json ./
+
+RUN npm install --silent 
 
 # Build app
 COPY . /app
-RUN yarn build
+RUN npm run build
 
 
 
