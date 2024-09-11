@@ -19,7 +19,7 @@ export const ToolsService = {
     link.href = href;
     
     const contentDisposition = res.headers['content-disposition'];
-    const filename = contentDisposition.match(/filename=(?<filename>[^,;]+);/)[0]; 
+    const filename = contentDisposition.match(/filename=(?<filename>[^,;]+);/).groups['filename'].replace(/['"]+/g, ''); 
     link.setAttribute('download', filename ?? 'download.pdf');
     document.body.appendChild(link);
     link.click();

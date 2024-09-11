@@ -1,10 +1,10 @@
 import type {NavigationTree} from '@/@types/navigation';
-import {IconDashboard, IconUser} from '@tabler/icons-react';
+import {IconDashboard, IconUser, IconDownload} from '@tabler/icons-react';
 
 const navigationConfig: NavigationTree[] = [
   {
     key: 'dashboard',
-    path: '/dashboard',
+    path: '/',
     title: 'Dashboard',
     translateKey: '',
     icon: IconDashboard,
@@ -16,7 +16,7 @@ const navigationConfig: NavigationTree[] = [
     path: '/rekhta-download',
     title: 'Rekhta Download',
     translateKey: '',
-    icon: IconUser,
+    icon: IconDownload,
     authority: [],
     subMenu: []
   },
@@ -25,7 +25,7 @@ const navigationConfig: NavigationTree[] = [
     path: '/chughtai-download',
     title: 'Chughtai Library Download',
     translateKey: '',
-    icon: IconUser,
+    icon: IconDownload,
     authority: [],
     subMenu: []
   },
