@@ -109,8 +109,6 @@ export default function ChughtaiDownload() {
 
               <Text size="md">This is the URL to the book you want to download. This page should show the book details. Once logged in, you should see the flip book on this page displaying the book. If you cannot see book pages in your browser, this book might not be supported for download using this tool.</Text>
 
-              <Text size="md">Click on Download button. Once download is started, please wait patiently while book is being download. Depending on number of pages in the book it can take a while to download.</Text>
-
               <Title order={4}>Session Id</Title>
 
               <Text size="md">This is similar to you login Id. Since Chughtai Libarary doesn't allow you to read book without logging in, please make sure you have an account with the website before proceeding. Visit <a href="https://www.chughtailibrary.com/" target="_blank">https://www.chughtailibrary.com/</a> for details.</Text>
